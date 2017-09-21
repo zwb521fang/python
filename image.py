@@ -17,5 +17,6 @@ def getImg(html):
     for imgurl in imgerlist:
         urllib.urlretrieve(imgurl,'D:\E\%s.jpg' % x)
         x+=1
+        
 html =  getHtml("https://tieba.baidu.com/p/5081322513")
 print getImg(html)
